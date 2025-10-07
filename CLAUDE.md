@@ -4,6 +4,22 @@ Always use context7 when I need code generation, setup or configuration steps, o
 library/API documentation. This means you should automatically use the Context7 MCP
 tools to resolve library id and get library docs without me having to explicitly ask.
 
+## Recent Session Notes (2025-10-06)
+
+### Design System Established
+- **Buttons**: Use backlight glow effect (transparent bg with glowing border/shadow), NOT gradient fills
+  - Primary: `bg-pulse/10 border-2 border-pulse shadow-lg shadow-pulse/40 backdrop-blur-sm`
+  - Hover effect: Intensify shadow (`shadow-pulse/60`) and brighten border
+- **Mobile Navigation**: Fully functional with proper z-index (z-40) and light/dark mode support
+- **Footer**: 3-column clean layout with backlight glow on social icons
+
+### Component Patterns
+- All interactive elements use backlight glow pattern (transparent bg + border + shadow glow)
+- Glass morphism with `backdrop-blur-sm` on buttons and UI elements
+- Proper light/dark mode support throughout
+
+**See `SESSION_LOG.md` for complete session details and all changes made.**
+
 # Bash commands
 
 - pnpm run dev: Run the project
