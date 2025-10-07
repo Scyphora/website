@@ -1,8 +1,8 @@
-@import "tailwindcss";
-@theme{
-    --color-dark: #0B0C10;
-    --color-medium: #43464B;
-    --color-light: #F1F3F5;
-    --color-primary: #5BA8D0;
-    --color-accent: #D5A021;
+@import 'tailwindcss';
+@theme {
+  --color-space: #0b0c10;
+  --color-gravity: #43464b;
+  --color-aurora: #f1f3f5;
+  --color-pulse: #5ba8d0;
+  --color-chronos: #d5a021;
 }
