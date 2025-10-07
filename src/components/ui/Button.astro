@@ -11,8 +11,8 @@ const { variant = 'primary', size = 'md', class: className, ...attrs } = Astro.p
 const baseClasses = 'group relative inline-flex items-center justify-center rounded-2xl font-semibold transition-all duration-500 ease-out overflow-hidden';
 
 const variantClasses = {
-  primary: 'bg-gradient-to-r from-pulse to-chronos text-space shadow-lg shadow-pulse/30 hover:shadow-xl hover:shadow-pulse/50 hover:scale-105 before:absolute before:inset-0 before:bg-gradient-to-r before:from-pulse-light before:to-chronos-light before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-500',
-  secondary: 'bg-gradient-to-br from-gravity to-gravity-light text-aurora border border-aurora/20 hover:border-pulse/50 hover:shadow-lg hover:shadow-pulse/20 hover:scale-105',
+  primary: 'bg-pulse/10 text-aurora border-2 border-pulse shadow-lg shadow-pulse/40 hover:shadow-xl hover:shadow-pulse/60 hover:border-pulse-light hover:scale-105 backdrop-blur-sm',
+  secondary: 'bg-space-light/50 text-aurora border border-aurora/20 hover:border-chronos/50 hover:shadow-lg hover:shadow-chronos/30 hover:scale-105 backdrop-blur-sm',
   ghost: 'text-aurora border-2 border-aurora/20 hover:border-pulse hover:text-pulse hover:shadow-lg hover:shadow-pulse/30 hover:scale-105 bg-transparent hover:bg-pulse/5',
 };
 
