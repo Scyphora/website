@@ -1,0 +1,86 @@
+---
+import Card from '@components/ui/Card.astro';
+---
+
+<section id="solutions" class="relative py-32">
+  <!-- Background effects -->
+  <div class="absolute inset-0">
+    <div class="absolute top-1/2 left-1/4 w-96 h-96 bg-pulse/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-chronos/10 rounded-full blur-3xl"></div>
+  </div>
+
+  <div class="container mx-auto px-6 lg:px-8 relative z-10">
+    <div class="max-w-7xl mx-auto">
+      <!-- Header -->
+      <div class="text-center mb-20">
+        <h2 class="mb-6 animate-fade-in-up">Our <span class="gradient-text">Solutions</span></h2>
+        <p class="text-xl md:text-2xl text-gravity-light max-w-3xl mx-auto animate-fade-in-up" style="animation-delay: 0.1s;">
+          Five pillars of invisible intelligence powering effortless experiences.
+        </p>
+      </div>
+
+      <!-- Solutions Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <Card glow class="animate-fade-in-scale" style="animation-delay: 0.2s;">
+          <div class="relative mb-6">
+            <div class="w-14 h-14 bg-gradient-to-br from-pulse/30 to-chronos/30 rounded-2xl flex items-center justify-center">
+              <svg class="w-7 h-7 text-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+              </svg>
+            </div>
+          </div>
+          <h3 class="text-2xl font-display font-bold text-aurora mb-4">Core</h3>
+          <p class="text-gravity-light leading-relaxed">Backend intelligence made invisible. Powerful engines running silently beneath the surface, orchestrating complexity effortlessly.</p>
+        </Card>
+
+        <Card glow class="animate-fade-in-scale" style="animation-delay: 0.25s;">
+          <div class="relative mb-6">
+            <div class="w-14 h-14 bg-gradient-to-br from-pulse/30 to-chronos/30 rounded-2xl flex items-center justify-center">
+              <svg class="w-7 h-7 text-chronos" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+          </div>
+          <h3 class="text-2xl font-display font-bold text-aurora mb-4">Flow</h3>
+          <p class="text-gravity-light leading-relaxed">Frontend experience, natural and fluid. Every interaction feels inevitable, every moment perfectly choreographed.</p>
+        </Card>
+
+        <Card glow class="animate-fade-in-scale" style="animation-delay: 0.3s;">
+          <div class="relative mb-6">
+            <div class="w-14 h-14 bg-gradient-to-br from-pulse/30 to-chronos/30 rounded-2xl flex items-center justify-center">
+              <svg class="w-7 h-7 text-pulse-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+          </div>
+          <h3 class="text-2xl font-display font-bold text-aurora mb-4">Nexus</h3>
+          <p class="text-gravity-light leading-relaxed">Bridge between systems and AI. Seamless integration across legacy architectures and cutting-edge technologies.</p>
+        </Card>
+
+        <Card glow class="animate-fade-in-scale" style="animation-delay: 0.35s;">
+          <div class="relative mb-6">
+            <div class="w-14 h-14 bg-gradient-to-br from-pulse/30 to-chronos/30 rounded-2xl flex items-center justify-center">
+              <svg class="w-7 h-7 text-chronos-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+          </div>
+          <h3 class="text-2xl font-display font-bold text-aurora mb-4">Pulse</h3>
+          <p class="text-gravity-light leading-relaxed">Real-time adaptive context. Systems that breathe, respond, and evolve intelligently to changing conditions.</p>
+        </Card>
+
+        <Card glow class="md:col-span-2 lg:col-span-1 animate-fade-in-scale" style="animation-delay: 0.4s;">
+          <div class="relative mb-6">
+            <div class="w-14 h-14 bg-gradient-to-br from-pulse/30 to-chronos/30 rounded-2xl flex items-center justify-center">
+              <svg class="w-7 h-7 text-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+              </svg>
+            </div>
+          </div>
+          <h3 class="text-2xl font-display font-bold text-aurora mb-4">Horizon</h3>
+          <p class="text-gravity-light leading-relaxed">Predictive foresight and analytics. Anticipate needs, forecast trends, and act before challenges arise.</p>
+        </Card>
+      </div>
+    </div>
+  </div>
+</section>

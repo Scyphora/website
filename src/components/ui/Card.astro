@@ -1,0 +1,22 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+interface Props extends HTMLAttributes<'div'> {
+  hover?: boolean;
+  glow?: boolean;
+}
+
+const { hover = true, glow = false, class: className, ...attrs } = Astro.props;
+
+const baseClasses = 'group relative glass rounded-3xl p-8 transition-all duration-500';
+const hoverClasses = hover ? 'hover:transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-pulse/30 hover:border-pulse/40 cursor-pointer' : '';
+const glowClasses = glow ? 'before:absolute before:inset-0 before:bg-gradient-to-br before:from-pulse/10 before:to-chronos/10 before:rounded-3xl before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-500 before:-z-10' : '';
+
+const classes = `${baseClasses} ${hoverClasses} ${glowClasses} ${className || ''}`;
+---
+
+<div class={classes} {...attrs}>
+  <div class="relative z-10">
+    <slot />
+  </div>
+</div>
